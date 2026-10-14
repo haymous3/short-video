@@ -7,12 +7,13 @@
   <meta name="description" content="A short video message from Amos Adeyemo." />
   <meta property="og:title" content="Amos Adeyemo — Video" />
   <meta property="og:description" content="A short video message from Amos Adeyemo." />
+  <meta property="og:url" content="https://short-video-rust.vercel.app/" />
   <meta property="og:type" content="video.other" />
-  <meta property="og:image" content="/public/poster.jpg" />
-  <meta property="og:video" content="/public/video.mp4" />
+  <meta property="og:image" content="https://short-video-rust.vercel.app/media/poster.jpg" />
+  <meta property="og:video" content="https://short-video-rust.vercel.app/media/video.mp4" />
   <meta property="og:video:type" content="video/mp4" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="preload" as="image" href="/public/poster.jpg" />
+  <link rel="preload" as="image" href="/media/poster.jpg" />
   <style>
     :root {
       --bg: #0e0f12;
@@ -93,7 +94,7 @@
   </header>
 
   <div class="player" id="player">
-    <video id="video" src="/public/video.mp4" poster="/public/poster.jpg" playsinline preload="metadata"></video>
+    <video id="video" src="/media/video.mp4" poster="/media/poster.jpg" playsinline preload="metadata"></video>
     <button class="play" id="play" aria-label="Play video">
       <span>
         <svg width="28" height="28" viewBox="0 0 24 24" fill="#111" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
@@ -101,7 +102,7 @@
     </button>
   </div>
 
-  <footer>2:00 · <a href="/public/video.mp4" download>Download</a></footer>
+  <footer>2:00 · <a href="/media/video.mp4" download>Download</a></footer>
 
   <script>
     const player = document.getElementById("player");
